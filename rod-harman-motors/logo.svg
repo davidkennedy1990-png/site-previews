@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rod Harman Motors">
+  <polygon points="32,2 58,17 58,47 32,62 6,47 6,17" fill="#ff5b14"/>
+  <polygon points="32,8 53,20 53,44 32,56 11,44 11,20" fill="#121417"/>
+  <circle cx="32" cy="32" r="17" fill="none" stroke="#ff5b14" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M20 22h8.2c3.9 0 6 2 6 5.1 0 2.3-1.2 3.8-3.2 4.5l3.8 10.4h-4.7l-3.3-9.6h-2.3v9.6H20zm4.5 3.7v4.9h3.3c1.4 0 2-.9 2-2.4s-.7-2.5-2-2.5z" fill="#f3eee6"/>
+  <path d="M36.5 22H41v8h4.5v-8H50v20h-4.5v-8.2H41V42h-4.5z" fill="#f3eee6"/>
+</svg>
