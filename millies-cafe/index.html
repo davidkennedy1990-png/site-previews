@@ -186,6 +186,11 @@ body.panel-open{overflow:hidden}body.panel-open .callbar{visibility:hidden}
 .fbbox{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 10px 30px -18px rgba(0,0,0,.3);min-height:300px}.fbbox iframe{display:block;width:100%;height:520px;border:0}
 .social .follow{display:flex;gap:10px;flex-wrap:wrap}
 @media (max-width:860px){.social .grid{grid-template-columns:1fr}}
+.app{background:var(--rose);color:#fff}.app .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.app h2 em{color:#ffd9cc}.app ul{list-style:none;padding:0;margin:20px 0 26px;display:grid;gap:12px}.app li{padding-left:30px;position:relative}.app li:before{content:"☕";position:absolute;left:0}
+.badges{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.badges img{height:52px;width:auto;display:block}
+.app .cup{justify-self:center;width:min(340px,80%);aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid rgba(255,255,255,.25)}.app .cup img{width:100%;height:100%;object-fit:cover}
+@media (max-width:860px){.app .wrap{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="no-js">
@@ -313,6 +318,15 @@ body.panel-open{overflow:hidden}body.panel-open .callbar{visibility:hidden}
  </div>
 </section>
 </main>
+<section id="app" class="app">
+ <div class="wrap">
+  <div class="rv"><span class="kicker" style="color:#ffd9cc">Millies loyalty app</span><h2>Your next coffee is <em>on us</em>.</h2>
+  <p>Download the free Millies app and sign up to our loyalty program:</p>
+  <ul><li>Get your next coffee FREE when you download the app and sign up</li><li>Automatic 5% off all food and drinks (except coffee)</li><li>Every 7th cup of coffee FREE</li></ul>
+  <div class="badges"><a href="https://apps.apple.com/nz/app/millies-cafe/id1599654103" target="_blank" rel="noopener"><img src="badge-appstore.svg" alt="Download on the App Store" width="156" height="52"></a><a href="https://play.google.com/store/apps/details?id=io.appropo.milliescafe" target="_blank" rel="noopener"><img src="badge-googleplay.png" alt="Get it on Google Play" width="135" height="52" style="height:78px;margin:-13px -8px"></a></div></div>
+  <div class="cup rv"><img src="latte-450.webp" srcset="latte-450.webp 450w, latte-900.webp 900w" sizes="340px" alt="Latte with heart latte art" loading="lazy"></div>
+ </div>
+</section>
 <section id="social" class="social">
  <div class="wrap" style="display:block">
   <div class="head rv"><div><span class="kicker">@milliescafe.nz</span><h2>Follow us for <em>daily specials</em>.</h2></div>
@@ -387,7 +401,7 @@ document.querySelectorAll('.menu-tabs button').forEach(function(b){b.addEventLis
  <button type="button" class="drawer-close" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="drawer-body">
   <nav aria-label="Menu"><ul class="menu-list">
-   <li style="--i:0"><a href="#hero" data-menu-link>Home</a></li><li style="--i:1"><a href="#menu" data-menu-link>Menu</a></li><li style="--i:2"><a href="#functions" data-menu-link>Functions &amp; catering</a></li><li style="--i:3"><a href="#gallery" data-menu-link>Gallery</a></li><li style="--i:4"><a href="#reviews" data-menu-link>Reviews</a></li><li style="--i:5"><a href="#visit" data-menu-link>Hours &amp; location</a></li>
+   <li style="--i:0"><a href="#hero" data-menu-link>Home</a></li><li style="--i:1"><a href="#menu" data-menu-link>Menu</a></li><li style="--i:2"><a href="#functions" data-menu-link>Functions &amp; catering</a></li><li style="--i:3"><a href="#gallery" data-menu-link>Gallery</a></li><li style="--i:4"><a href="#reviews" data-menu-link>Reviews</a></li><li style="--i:5"><a href="#app" data-menu-link>Get the app</a></li><li style="--i:6"><a href="#visit" data-menu-link>Hours &amp; location</a></li>
   </ul></nav>
   <div class="menu-extra"><div class="menu-pills">
    <button type="button" class="btn btn-rose" data-open-booking><svg><use href="#i-cal"/></svg>Book a table</button>
