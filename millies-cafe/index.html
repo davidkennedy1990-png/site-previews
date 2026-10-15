@@ -199,6 +199,16 @@ body.panel-open{overflow:hidden}body.panel-open .callbar{visibility:hidden}
 .cc{margin-top:22px;max-width:680px;background:var(--sand);color:var(--ink);padding:18px 22px;border-radius:var(--r);line-height:1.6}.cc a{color:var(--rose-d);font-weight:500}
 .band:after{background:linear-gradient(90deg,rgba(28,20,16,.86),rgba(28,20,16,.62) 60%,rgba(28,20,16,.45))!important}
 .app{background:var(--rose-d)!important}
+#hero{min-height:82svh!important}
+.hero-copy h1{font-weight:700!important;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.85),0 4px 30px rgba(0,0,0,.75)!important;font-size:clamp(3rem,7.6vw,6rem)!important}
+.hero-copy h1 em{color:#ffd1e6!important}
+.hero-ctas .btn{font-size:1.15rem;font-weight:700;padding:18px 30px}
+.hero-ctas .btn-line{background:rgba(20,14,11,.72)!important;color:#fff!important;box-shadow:inset 0 0 0 2px #fff!important}
+.intro-strip{background:var(--sand);color:var(--ink);padding:34px 0 38px;border-bottom:1px solid rgba(42,33,28,.08)}
+.intro-strip .kicker{color:#7a4a1c}
+.intro-strip p{font-size:1.15rem;max-width:720px;margin:0 0 18px;color:var(--ink)}
+.chips2{display:flex;flex-wrap:wrap;gap:10px}.chips2 span,.chips2 a{font-size:.9rem;font-weight:500;padding:8px 16px;border-radius:999px;background:var(--sand2);color:var(--ink);text-decoration:none}
+.chips2 a{background:var(--rose-d);color:#fff}
 </style>
 </head>
 <body class="no-js">
@@ -222,24 +232,26 @@ body.panel-open{overflow:hidden}body.panel-open .callbar{visibility:hidden}
 <main>
 <section id="hero">
  <div class="hero-media" data-depth="0.35">
-  <video id="herovid" autoplay muted loop playsinline preload="auto" poster="hero-poster.jpg" aria-hidden="true">
-   <source src="hero-m.mp4" type="video/mp4" media="(max-width: 900px)">
-   <source src="hero.mp4" type="video/mp4">
+  <video id="herovid" autoplay muted loop playsinline preload="auto" poster="hero-poster.jpg?v=20261015b" aria-hidden="true">
+   <source src="hero-m.mp4?v=20261015b" type="video/mp4" media="(max-width: 900px)">
+   <source src="hero.mp4?v=20261015b" type="video/mp4">
   </video>
  </div>
- <div class="blob b1" data-depth="-0.15"></div><div class="blob b2" data-depth="0.12"></div>
  <div class="wrap hero-copy" data-depth="0.1">
-  <span class="kicker" style="color:#ffc2dc">Millwater Parkway · Silverdale</span>
   <h1>Brunch &amp; coffee in <em>Millwater</em>, Silverdale.</h1>
-  <p>All-day brunch, great coffee and a fully licensed bar, in a bright, relaxed space with plenty of outdoor seating. So glad you're here.</p>
   <div class="hero-ctas">
    <button type="button" class="btn btn-rose" data-open-booking><svg><use href="#i-cal"/></svg>Book a table</button>
    <a class="btn btn-line" href="#menu">See the menu</a>
   </div>
-  <div class="chips"><span>Open 7 days</span><span>Fully licensed</span><span>★ 4.6 on Google</span><span>Order online for pickup</span></div>
-
  </div>
 </section>
+<div class="intro-strip">
+ <div class="wrap">
+  <span class="kicker">Millwater Parkway · Silverdale</span>
+  <p>All-day brunch, great coffee and a fully licensed bar, in a bright, relaxed space with plenty of outdoor seating. So glad you're here.</p>
+  <div class="chips2"><span>Open 7 days</span><span>Fully licensed</span><span>★ 4.6 on Google</span><a href="https://milliescafe.appropo.io/pickup" target="_blank" rel="noopener">Order online for pickup →</a></div>
+ </div>
+</div>
 <div class="reassure">
  <div class="wrap">
   <div><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></svg><span><b>Open 7 days</b>From 6:30am weekdays, 7am weekends</span></div>
